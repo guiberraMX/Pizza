@@ -1,0 +1,124 @@
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Nuestras entradas - MyM Pizzas</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png"/>
+  <!-- Including stylesheets-->
+  <link rel="stylesheet" href="assets/css/core.css"/>
+  <link rel="stylesheet" href="assets/css/theme.css"/>
+  <link rel="stylesheet" href="assets/css/font-awesome.css"/>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,latin-ext"/>
+  <link rel="stylesheet" href="assets/css/layerslider.css"/>
+  <link rel="stylesheet" href="assets/css/prettyPhoto.css"/>
+  <link rel="stylesheet" href="assets/css/colorpicker.css"/>
+</head>
+<body class="responsive">
+  <!--include colorpicker-->
+  <div class="site-wrapper">
+    
+   
+    <section class="style-2 portfolio-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="post-images" data-ride="carousel" class="carousel slide post-images">
+              <div class="carousel-inner">
+                <div class="item active"><img src="assets/images/portfolio-single-1.jpg" alt="Portfolio single 1"/></div>
+                <div class="item"><img src="assets/images/portfolio-single-2.jpg" alt="Portfolio single 2"/></div>
+                <div class="item"><img src="assets/images/portfolio-single-3.jpg" alt="Portfolio single 3"/></div>
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#post-images" data-slide-to="0" class="active"></li>
+                <li data-target="#post-images" data-slide-to="1"></li>
+                <li data-target="#post-images" data-slide-to="2"></li>
+              </ol><a href="#post-images" role="button" data-slide="prev" class="left carousel-control"><i class="fa fa-chevron-left"></i></a><a href="#post-images" role="button" data-slide="prev" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <h3>Deliciosos Croissants</h3>
+            <p>Rellenos de fino jamón fresco, con el toque de la casa.</p>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Champiñones a la mantequilla.</h5>
+                <p>Receta tradicional de una deliciosa entrada para acompañar en esos grandes momentos.</p>
+              </div>
+              <div class="col-md-6">
+                <h5>Orden de pan con queso.</h5>
+                <p>Preparado al horno en con abundante queso, una de nuestras recomendaciones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="load-more text-center">
+      <div class="container">
+        <div class="row"><a href="index.html" class="btn btn-md secondary"><i class="fa fa-home"> </i>home</a></div>
+      </div>
+    </section>
+  
+    <!-- Including scripts-->
+    <!-- script(src="")-->
+    <input id="site-url" type="hidden" value="http://anpsthemes.com/kataleya-html"/>
+    <footer class="site-footer">
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6"><img src="assets/images/footer-logo.png" alt="Footer Logo"/></div>
+            <div class="col-sm-6">
+              <div class="social"><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-behance"></a><a href="#" class="fa fa-skype"></a><a href="#" class="fa fa-vimeo-square"></a><a href="#" class="fa fa-google-plus"></a><a href="#" class="fa fa-linkedin-square"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/javascript/gmap3.js"></script>
+    <script src="assets/javascript/jquery.cookie.js"></script>
+    <script src="assets/javascript/theme.js"></script>
+    <script src="assets/javascript/smoothscroll.js"></script>
+    <script src="assets/javascript/bootstrap/tab.js"></script>
+    <script src="assets/javascript/bootstrap/collapse.js"></script>
+    <script src="assets/javascript/bootstrap/alert.js"></script>
+    <script src="assets/javascript/bootstrap/carousel.js"></script>
+    <script src="assets/javascript/bootstrap/transition.js"></script>
+    <script src="assets/javascript/jquery.touchSwipe.js"></script>
+    <script src="assets/javascript/picturefill.js" async="async"></script>
+    <script src="assets/javascript/parallax.js"></script>
+    <script src="assets/javascript/imagesloaded.js"></script>
+    <script src="assets/javascript/isotope.js"></script>
+    <script src="assets/javascript/jflickrfeed.js"></script>
+    <script src="assets/javascript/jquery.prettyPhoto.js"></script>
+    <!-- LayerSlider-->
+    <script src="assets/javascript/greensock.js"></script>
+    <script src="assets/javascript/layerslider.transitions.js"></script>
+    <script src="assets/javascript/layerslider.kreaturamedia.jquery.js"></script>
+    <!-- Colorpicker-->
+    <script src="assets/javascript/colorpicker.js"></script>
+    <script>
+      jQuery(function($) {
+       map('#map', '2 Elizabeth St, Melbourne', 14);
+       
+       $("#no-clutter").parallax("50%", 0.6);
+       $("#home").parallax("50%", 0.6);
+       $("#coffee-statement-1").parallax("50%", 0.6);
+       $("#pizza-statement-1").parallax("50%", 0.6);
+      });
+      
+    </script>
+    <script>
+      jQuery(function() {
+       jQuery('#home').layerSlider({
+        skin 				: 'kataleya',
+        skinsPath 			: 'assets/css/layerslider/skins/',
+        responsiveUnder		: 1200,
+        layersContainer 	: 1200,
+        responsive 			: true,
+        showCircleTimer		: false
+       });
+      });
+    </script>
+  </div>
+</body>
