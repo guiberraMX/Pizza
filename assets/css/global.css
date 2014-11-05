@@ -23,6 +23,15 @@
 /* =Basic Elements
 -------------------------------------------------------------- */
 /* Headings */
+
+/* @guiberraMX - Thinkers in Motion + Daze Media Studio */
+
+
+.marko{
+  margin-top: 20px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.6em;
   margin-bottom: 20px; }
@@ -35,7 +44,8 @@ h1 {
 h2 {
   font-size: 48px; }
   h2.section-heading {
-    font-size: 24px;
+    font-size: 38px;
+    color:#597531;
     margin-bottom: 20px;
     position: relative;
     z-index: 2; }
@@ -230,7 +240,7 @@ em {
     right: 0;
     top: 0; }
   .sticky-menu.sticky-scroll .site-header {
-    background-color: #2E1E1F;
+    background-color: #af3f37;
     height: 78px; }
   @media (max-width: 992px) {
     .responsive .site-header {
@@ -453,7 +463,7 @@ em {
   padding-bottom: 60px;
   padding-top: 60px; }
 .site-footer .copyright {
-  background-color: #1c1010;
+  background-color: #597531;
   color: #fff;
   padding: 28px 0 24px 0; }
   .site-footer .copyright ul {

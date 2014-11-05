@@ -3,6 +3,14 @@
 /* =Fonts
 -------------------------------------------------------------- */
 /* Import Fonts */
+.style-2 h2, {
+  color:#597531;
+}
+
+.nico{
+  color: #fff !important;
+}
+
 @font-face {
   font-family: "Pacifico";
   src: url('../fonts/pacifico-webfont.eot?1402738684');
@@ -76,7 +84,11 @@ a.pp_close {
   color: #fff; }
 
 /* headings */
-h1, h2, h3, h4, h5, h6,
+
+h6{
+  color:#b3353b;
+}
+h1, h2, h3, h4, h5, 
 .page-heading ul li a,
 .dropcaps:first-letter,
 div.style-2 .page-numbers a,
@@ -97,7 +109,7 @@ blockquote,
 .recent-widget ul li > h5,
 .recent-widget ul li > .post-date,
 a:hover i {
-  color: #363636; }
+  color: #161615; }
 
 .btn.style-2.secondary,
 .btn.style-2:hover,
@@ -111,8 +123,12 @@ strong {
   .menu-dark .site-navigation li > a {
     color: #000; } }
 /* primary color */
+
+.color{
+  color:#b3353b;
+}
 a,
-.color,
+
 div.site-navigation ul > li a:hover,
 .site-navigation > li a:hover,
 .site-navigation li.active > a,
@@ -157,6 +173,11 @@ a:hover h2,
 
 .btn.style-2.success {
   color: #87c73c; }
+
+
+  .btn{
+    background-color: #B3353B !important;
+  }
 
 /* =Background Colors
 -------------------------------------------------------------- */
@@ -213,7 +234,7 @@ a.carousel-control:hover i {
   background-color: #363636; }
 
 .btn.secondary,
-.btn:hover,
+
 .btn:focus {
   background-color: #363636 !important; }
 
@@ -221,6 +242,10 @@ a.carousel-control:hover i {
 .pricing-table.style-2 header,
 .pricing-table.style-2 .btn {
   background-color: #2e1e1f; }
+
+  .btn:hover{
+    background-color: #C03520 !important;
+  }
 
 @media (min-width: 992px) {
   .responsive .site-navigation .sub-menu {
