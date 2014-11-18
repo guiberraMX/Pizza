@@ -44,7 +44,7 @@ h1 {
 h2 {
   font-size: 48px; }
   h2.section-heading {
-    font-size: 38px;
+    font-size: 3.4em;
     color:#597531;
     margin-bottom: 20px;
     position: relative;
@@ -240,7 +240,7 @@ em {
     right: 0;
     top: 0; }
   .sticky-menu.sticky-scroll .site-header {
-    background-color: #af3f37;
+    background-color: #AD2D2D;
     height: 78px; }
   @media (max-width: 992px) {
     .responsive .site-header {
@@ -723,6 +723,7 @@ em {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.4); }
   .ls-container h1, .ls-container h2, .ls-container h3, .ls-container h4, .ls-container h5 {
     color: #fff;
+    text-shadow: 1px 1px 3px #000;
     padding-left: 20px !important;
     padding-right: 20px !important;
     margin: 0 !important; }
