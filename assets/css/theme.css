@@ -11,6 +11,11 @@
   color: #fff !important;
 }
 
+#cono img{
+  vertical-align: top;
+  margin-right: 50%;
+}
+
 @font-face {
   font-family: "Pacifico";
   src: url('../fonts/pacifico-webfont.eot?1402738684');
