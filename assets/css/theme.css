@@ -13,7 +13,7 @@
 }
 
 .order-menu-wrapper section img{
-  margin-left: 30%;
+  margin-left: 41%;
 }
 
 @font-face {
@@ -185,9 +185,14 @@ a:hover h2,
     background-color: #B3353B !important;
   }
 
+
+  .navbar-header button{
+    background-color: #4b722c;
+  }
+
 /* =Background Colors
 -------------------------------------------------------------- */
-.site-header .navbar-header button,
+.site-header,
 .btn,
 mark,
 .pricing-table header,
@@ -264,12 +269,12 @@ a.carousel-control:hover i {
   background-color: #333; }
 
 ::-moz-selection {
-  color: #fff;
-  background-color: #ff9c00; }
+  color: #4b722c !important;
+  background-color: #AD2D2D !important; }
 
 ::selection {
-  color: #fff;
-  background-color: #ff9c00; }
+  color: #4b722c !important;
+  background-color: #AD2D2D !important; }
 
 .ls-kataleya .ls-bottom-slidebuttons a,
 .carousel.post-images .carousel-indicators li,
