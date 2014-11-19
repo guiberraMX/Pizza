@@ -169,7 +169,9 @@ a:hover h2,
 .order-menu-wrapper .close-order,
 .search-posts li a:hover i,
 .search-posts li a:hover h4 {
-  color: #ff9c00; }
+  color: #ff9c00;
+  box-shadow: 10px 10px 5px #888888; 
+}
 
 .icon span {
   color: #bfbfbf; }
