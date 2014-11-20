@@ -345,14 +345,15 @@ textarea:focus, select:focus {
 
 #content {
   position: relative;
-  width: 100vw;
+  margin-left: 0;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
 }
 #content .post {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: 250px;
+  height: 250px;
   background: #000;
   display: block;
   overflow: hidden;
