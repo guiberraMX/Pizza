@@ -1089,12 +1089,13 @@ blockquote {
 /* =Social
 -------------------------------------------------------------- */
 .social {
-  font-size: 19px;
+  font-size: 33px;
   margin-left: -20px; }
   .social a {
     margin-left: 20px; }
     .social a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color:#4B722C; }
 
 /* =Opening hours
 -------------------------------------------------------------- */

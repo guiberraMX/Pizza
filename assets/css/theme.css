@@ -16,6 +16,8 @@
   margin-left: 41%;
 }
 
+
+
 @font-face {
   font-family: "Pacifico";
   src: url('../fonts/pacifico-webfont.eot?1402738684');
@@ -130,9 +132,18 @@ strong {
 /* primary color */
 
 .color{
-  color:#4b722c;
+  color:#s;
 
 }
+
+
+
+
+.site-footer .copyright .social a:hover{
+  background-color: red;
+}
+
+
 a,
 
 div.site-navigation ul > li a:hover,
@@ -156,7 +167,7 @@ div.style-2 .page-numbers a.page-numbers:hover,
 .landing-page a:hover h4,
 .landing-page a:hover h5,
 blockquote:before,
-.site-footer .copyright .social a:hover,
+
 a:hover h2,
 .filter li,
 .filter li button.selected,
