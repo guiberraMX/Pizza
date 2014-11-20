@@ -335,8 +335,6 @@ textarea:focus, select:focus {
 
 
 
-
-
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 *, *:before, *:after {
@@ -344,16 +342,16 @@ textarea:focus, select:focus {
 }
 
 #content {
+  margin-left: 7%;
   position: relative;
-  margin-left: 0;
-  width: 100%;
+  width: 80vw;
   display: flex;
   flex-flow: row wrap;
 }
 #content .post {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 25vw;
+  height: 25vw;
   background: #000;
   display: block;
   overflow: hidden;
@@ -391,4 +389,13 @@ textarea:focus, select:focus {
 }
 #content .post:hover ul {
   transform: translateX(0);
-}
+
+
+
+
+
+
+
+
+
+
