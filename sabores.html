@@ -14,6 +14,19 @@
   <link rel="stylesheet" href="assets/css/colorpicker.css"/>
 </head>
 <body class="responsive">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
   <!--include colorpicker-->
   <div class="site-wrapper">
     <!-- Site Header -->
@@ -23,63 +36,99 @@
           <!-- Site Logo: change the width to fit your logo size-->
           <div class="site-logo retina pull-left"><a href="index.html"><img src="assets/images/logo.png" width="160" alt="Kataleya Logo"/></a></div>
           <!-- Site Navigation-->
-          <nav role="navigation" class="navbar pull-right">
-            <!-- Site Navigation Header: this part is required and is used on mobile.-->
-            <div class="navbar-header">
-              <button type="button" data-toggle="collapse" data-target=".site-navigation" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span></button>
-            </div>
-            <!-- Site Navigation: main menu content-->
-            <ul class="site-navigation">
-                <li class="active"><a href="index.html#home">Bienvenido</a>
+       <nav role="navigation" class="navbar pull-right">
+              <!-- Site Navigation Header: this part is required and is used on mobile.-->
+              <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target=".site-navigation" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span></button>
+              </div>
+              <!-- Site Navigation: main menu content-->
+              <ul class="site-navigation">
+                <li class="active"><a href="#home">Bienvenido</a>
                   
                 </li>
-                <li><a href="#menu" data-toggle="dropdown" class="dropdown-toggle">Menu</a>
+
+                <li><a href="#menu">Nuestro menú</a></li>
+
+                <li><a href="#restaurant">Promociones</a>
+                 <li><a  data-toggle="dropdown" class="dropdown-toggle">Mas de Nosotros</a>
                   <ul class="sub-menu">
                     
-                    <li><a href="sabores.html">Ingredientes</a></li>
-                    <li class="active"><a href="nosotros.html">Nosotros</a>
+                    
+                    <li class="active"><a href="nosotros.html">La historia</a>
+                    <li><a href="sabores.html">Galería</a></li>
                     
                     
                   </ul>
                 </li>
-                <li><a href="index.html#restaurant">Nuestra especialidad</a></li>
-                <li><a href="index.html#reservation">Reservaciones</a></li>
-                
-                  <ul class="sub-menu">
-                    <li><a href="blog-sidebar.html">blog with sidebar</a></li>
-                    <li><a href="blog-masonry.html">blog masonry</a></li>
-                    <li><a href="blog-3-columns.html">blog 3 columns  </a></li>
-                    <li><a href="blog-single.html">blog article </a></li>
-                    <li><a href="404.html">error 404</a></li>
-                    <li><a href="search.html">search page</a></li>
-                  </ul>
-                </li>
-                <li><a href="index.html#contact">Contact0</a></li>
+
+                <li><a href="#contact">Contacto</a></li>
               </ul>
-          </nav>
+            </nav>
         </div>
       </div>
     </header>
     
-   
+   <div>
+   <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'MyMPizzas',
+        clientId: 'mympizzas',
+        template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
+
+</div>
+
+
+<!-- SnapWidg
+
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=bXltcGl6emFzfGlufDIyNXw1fDV8fHllc3w1fGZhZGVPdXR8b25TdGFydHx5ZXN8eWVz&ve=191114" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
 
 
 
-<iframe src="http://widget.websta.me/in/mympizzas/?s=240&w=8&h=5&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:100%; height: 100%" ></iframe> <!-- websta - web.stagram.com -->
 
 
 
-    <!-- Including scripts-->
+
+<iframe src="http://widget.websta.me/in/mympizzas/?s=240&w=8&h=5&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:100%; height: 100%" ></iframe> 
+
+
+et -->
+
+
+
+<!-- www.intagme.c
+<iframe src="http://www.intagme.com/in/?h=bXltcGl6emFzfGlufDIyMHw0fDZ8fHllc3w1fHVuZGVmaW5lZHx5ZXM=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 1410px" ></iframe>
+
+
+
+ scripts-->
+
+ <h3>Algunos de los momentos vividos en nuestra casa...</h3>
+
+<section id="content"></section>
+
+
+<h3>Comparte tus momentos en MyM Pizzas desde Instagram con en Hashtag #MyMPizzas y deja tus opiniones.</h3>
+
+
+<div class="fb-comments" data-href="https://www.facebook.com/MyMsPizzas" data-width="500px" data-numposts="1" data-colorscheme="light"></div>
+
+
+
     <!-- script(src="")-->
-    <input id="site-url" type="hidden" value="http://anpsthemes.com/kataleya-html"/>
+ 
     <footer class="site-footer">
       <div class="copyright">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6"><img src="assets/images/footer-logo.png" alt="Footer Logo"/></div>
+            <div class="col-sm-6"><img src="assets/images/footer-logo.png" width="22%" alt="Footer Logo"/></div>
             <div class="col-sm-6">
-              <div class="social"><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-behance"></a><a href="#" class="fa fa-skype"></a><a href="#" class="fa fa-vimeo-square"></a><a href="#" class="fa fa-google-plus"></a><a href="#" class="fa fa-linkedin-square"></a>
-              </div>
+               <div class="social"><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-vine"></a><a href="#" class="fa fa-instagram"></a>
+                </div>
             </div>
           </div>
         </div>
@@ -103,6 +152,12 @@
     <script src="assets/javascript/isotope.js"></script>
     <script src="assets/javascript/jflickrfeed.js"></script>
     <script src="assets/javascript/jquery.prettyPhoto.js"></script>
+
+    <script src="assets/javascript/inn.js"></script>
+
+ 
+
+
     <!-- LayerSlider-->
     <script src="assets/javascript/greensock.js"></script>
     <script src="assets/javascript/layerslider.transitions.js"></script>
