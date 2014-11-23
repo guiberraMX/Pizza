@@ -370,7 +370,7 @@ textarea:focus, select:focus {
   width: 25vw;
   height: 25vw;
   background: #fff;
-  display: block;
+  display: inline-block;
   overflow: hidden;
 
 
@@ -402,6 +402,7 @@ textarea:focus, select:focus {
   text-align: center;
   color:fff;
   line-height: 50px;
+  display: inline-block;
 }
 #content .post:hover .image {
   opacity: .7;
