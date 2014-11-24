@@ -111,7 +111,16 @@ a.pp_close {
 h6{
   color:#b3353b;
 }
-h1, h2, h3, h4, h5, 
+
+h5{
+  color: #fff;
+
+}
+
+.toppa h5{
+  text-align: justify;
+}
+h1, h2, h3, h4, 
 .page-heading ul li a,
 .dropcaps:first-letter,
 div.style-2 .page-numbers a,

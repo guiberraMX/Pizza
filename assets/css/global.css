@@ -844,7 +844,8 @@ em {
     top: -2px;
     width: 15px; }
   .order-menu-wrapper h2 {
-    font-size: 30px; }
+    font-size: 30px;
+    color:#897A64 !important; }
   .order-menu-wrapper h3 {
     color: inherit;
     font-size: 22px; }
