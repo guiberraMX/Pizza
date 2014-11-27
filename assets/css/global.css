@@ -1082,9 +1082,7 @@ div.pp_default .pp_content_container .pp_right {
 a.pp_expand, a.pp_contract, .pp_hoverContainer, .pp_gallery, .pp_top, .pp_bottom {
   display: none !important; }
 
-#pp_full_res img {
-  width: 100% !important;
-  height: auto !important; }
+
 
 .pp_details {
   width: 100% !important;
