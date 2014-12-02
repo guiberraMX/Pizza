@@ -51,6 +51,7 @@ h2 {
     z-index: 2; }
     @media (min-width: 768px) {
       h2.section-heading {
+        margin-top: 60px !important;
         margin-bottom: 40px; } }
     @media (min-width: 992px) {
       h2.section-heading {
