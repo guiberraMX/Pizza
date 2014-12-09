@@ -1776,7 +1776,7 @@
       <script src="assets/javascript/colorpicker.js"></script>
       <script>
         jQuery(function($) {
-         map('#map', '2 Elizabeth St, Melbourne', 14);
+         map('#map', '', 15);
          
          $("#no-clutter").parallax("50%", 0.6);
          $("#home").parallax("50%", 0.6);
@@ -1784,7 +1784,17 @@
          $("#pizza-statement-1").parallax("50%", 0.6);
         });
         
+
+        $('#map').gmap3({
+ marker:{
+    latLng:[20.1235391,-98.73621659999998]
+ }
+});
+
+
       </script>
+
+
       <script>
         jQuery(function() {
          jQuery('#home').layerSlider({
