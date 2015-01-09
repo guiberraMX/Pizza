@@ -1,6 +1,6 @@
 <?php
-    $to = 'support@anpsthemes.com';
-    $from = 'info@anpsthemes.com';
+    $to = 'alejandro.guiberra@gmail.com';
+    $from = 'alejandro.guiberra@gmail.com';
     $subject = 'Mail from Kataleya';
 
     $message = '';
