@@ -28,11 +28,5 @@
 
 
 
-<?php
-
-$subject 0,
-$message 130. "/rsort(array1)"
-'Cpe conta: charset utf-8'
-mail(!msession_get_array(99))
 
 
