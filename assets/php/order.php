@@ -1,5 +1,5 @@
 <?php
-    $to = 'contacto@mympizzas.com.mx; guiberramx@gmail.com; jjuarez007@gmail.com';
+    $to = 'contacto@mympizzas.com.mx; alejandro.guiberra@gmail.com; jjuarez007@gmail.com';
     $from = 'contacto@mympizzas.com.mx';
     $subject = 'Pedido a Domicilio';
 
