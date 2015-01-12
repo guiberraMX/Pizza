@@ -1,7 +1,7 @@
 <?php
-    $to = 'support@anpsthemes.com';
-    $from = 'support@anpsthemes.com';
-    $subject = 'Order on Kataleya';
+    $to = 'contacto@mympizzas.com.mx; guiberramx@gmail.com; jjuarez007@gmail.com';
+    $from = 'contacto@mympizzas.com.mx';
+    $subject = 'Pedido a Domicilio';
 
     $message = '';
 

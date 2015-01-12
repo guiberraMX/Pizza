@@ -526,6 +526,7 @@ jQuery(function($) {
 
       	orderItems['TOTAL'] = '$' + $('.order-review .price span').html();
 
+
 		try {
 			$.ajax({
 				type: "POST",
