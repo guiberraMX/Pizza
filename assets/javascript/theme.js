@@ -1,10 +1,11 @@
 "use strict";
 /* Order Menu */
+$.cookie("kataleya-order", "", { expires: 365, path: '/' });
 
 
+// $.cookie("kataleya-order",null, "/");
 
-
-
+// alert("ok");
 (function($, undefined) {
     $.expr[":"].containsNoCase = function(el, i, m) {
         var search = m[3];
@@ -439,6 +440,7 @@ jQuery(function($) {
 
 		$.each(vals, function(index) {
 			var eachVal = vals[index].split(':');
+
 			$('.order-menu #' + eachVal[0]).addClass('active').find('.num').html(eachVal[1]);
 
 			total += parseInt(eachVal[1]) * parseFloat($('.order-menu #' + eachVal[0]).find('.price').clone().children().remove().end().text().replace(',', '.'));
@@ -517,6 +519,9 @@ jQuery(function($) {
 	/* Order form submit */
 
 	$('form[data-menu-order="customer"]').on('submit', function(e) {
+
+    e.preventDefault();
+
 		$(".contact-success").remove();
 		var el = $(this);
       	var formData = el.serializeObject();
@@ -554,7 +559,10 @@ jQuery(function($) {
           }
         }).success(function(msg) {
 
-          $.cookie("kataleya-order", null);
+          // $.cookie("kataleya-order", null, { expires: 365, path: '/' });
+          $.cookie("kataleya-order", "", { expires: 365, path: '/' });
+          // $.removeCookie("kataleya-order", "/");
+          // $.cookie('kataleya-order', '/', { expires: -1 });
 
           el.append('<div class="row"><div class="col-md-12"><div class="alert alert-success contact-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-check"></i>' + $(el).attr("data-success") + '</div></div></div>');
           $('.contact-success .close').on('click', function() {
@@ -562,7 +570,7 @@ jQuery(function($) {
           });
         });
 
-		e.preventDefault();
+
 		return false;
 	});
 
