@@ -6,7 +6,7 @@ $path = dirname(__file__);
 require $path."/mailer/PHPMailerAutoload.php";
 
 
-$subject = 'Pedido a Domicilio';
+
 
 $message = '';
 
@@ -36,7 +36,7 @@ $message .= '</table>';
 // 'X-Mailer: PHP/' . phpversion();
 
 
-
+$subject = 'Pedido a Domicilio';
 
 
 
