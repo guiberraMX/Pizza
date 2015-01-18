@@ -553,7 +553,9 @@ jQuery(function($) {
             alert("error");
           }
         }).success(function(msg) {
-          // alert(msg);
+
+          $.cookie("kataleya-order", null);
+
           el.append('<div class="row"><div class="col-md-12"><div class="alert alert-success contact-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-check"></i>' + $(el).attr("data-success") + '</div></div></div>');
           $('.contact-success .close').on('click', function() {
             $(this).parent().remove();
