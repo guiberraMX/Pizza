@@ -1,6 +1,11 @@
 "use strict";
 /* Order Menu */
+$.cookie("kataleya-order", "", { expires: 365, path: '/' });
 
+
+// $.cookie("kataleya-order",null, "/");
+
+// alert("ok");
 (function($, undefined) {
     $.expr[":"].containsNoCase = function(el, i, m) {
         var search = m[3];
@@ -108,20 +113,20 @@ function addNewStyle(newStyle) {
 }
 
 jQuery.fn.isOnScreen = function(){
-     
+
     var win = $(window);
-     
+
     var viewport = {
         top : win.scrollTop(),
         left : win.scrollLeft()
     };
     viewport.right = viewport.left + win.width();
     viewport.bottom = viewport.top + win.height();
-     
+
     var bounds = this.offset();
     bounds.right = bounds.left + this.outerWidth();
     bounds.bottom = bounds.top + this.outerHeight();
-     
+
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
 
@@ -139,7 +144,7 @@ jQuery(function($) {
 			$('.site-navigation').height($(window).height() - 97);
 		}
 	});
-	
+
 	addNewStyle('@media (min-width: 1200px) {.ls-container, .ls-inner, .ls-slide {height: ' + $(window).height() + 'px !important;}}');
 
 
@@ -170,10 +175,10 @@ jQuery(function($) {
 	$(".carousel-inner").swipe( {
 		//Generic swipe handler for all directions
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
-			$(this).parent().carousel('prev'); 
+			$(this).parent().carousel('prev');
 		},
 		swipeRight: function() {
-			$(this).parent().carousel('next'); 
+			$(this).parent().carousel('next');
 		},
 		//Default is 75px, set to 0 for demo so any distance triggers swipe
 		threshold:0
@@ -188,7 +193,7 @@ jQuery(function($) {
 	/* Navigation links (smooth scroll) */
 
 	$('.site-navigation a[href*=#]:not([href=#])').click(function() {
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 	      || location.hostname == this.hostname) {
 
 	    var target = $(this.hash);
@@ -435,6 +440,7 @@ jQuery(function($) {
 
 		$.each(vals, function(index) {
 			var eachVal = vals[index].split(':');
+
 			$('.order-menu #' + eachVal[0]).addClass('active').find('.num').html(eachVal[1]);
 
 			total += parseInt(eachVal[1]) * parseFloat($('.order-menu #' + eachVal[0]).find('.price').clone().children().remove().end().text().replace(',', '.'));
@@ -513,6 +519,9 @@ jQuery(function($) {
 	/* Order form submit */
 
 	$('form[data-menu-order="customer"]').on('submit', function(e) {
+
+    e.preventDefault();
+
 		$(".contact-success").remove();
 		var el = $(this);
       	var formData = el.serializeObject();
@@ -526,6 +535,7 @@ jQuery(function($) {
 
       	orderItems['TOTAL'] = '$' + $('.order-review .price span').html();
 
+<<<<<<< HEAD
       	
 
 		try {
@@ -543,8 +553,44 @@ jQuery(function($) {
 				});
 			});
 		} catch(e) { console.log(e); }
+=======
+        var host = window.location.hostname;
+        var pathname = window.location.pathname;
+        var protocol = window.location.protocol;
 
-		e.preventDefault();
+        var _url = protocol.concat("//").concat(host).concat(pathname);
+
+        _url = _url + 'assets/php/order.php';
+
+        // alert(_url);
+
+
+        $.ajax({
+          type: "POST",
+          async: false,
+          url: _url,
+          data: {
+            form_data 	 : formData,
+            order_items : orderItems
+          },
+          error: function(){
+            alert("error");
+          }
+        }).success(function(msg) {
+
+          // $.cookie("kataleya-order", null, { expires: 365, path: '/' });
+          $.cookie("kataleya-order", "", { expires: 365, path: '/' });
+          // $.removeCookie("kataleya-order", "/");
+          // $.cookie('kataleya-order', '/', { expires: -1 });
+
+          el.append('<div class="row"><div class="col-md-12"><div class="alert alert-success contact-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-check"></i>' + $(el).attr("data-success") + '</div></div></div>');
+          $('.contact-success .close').on('click', function() {
+            $(this).parent().remove();
+          });
+        });
+
+>>>>>>> origin/master
+
 		return false;
 	});
 
@@ -566,7 +612,7 @@ jQuery(function($) {
 	          el.find(".carousel-inner").html(msg);
 	        }
 	    });
-	    
+
 	});
 	} catch(e) {}
         /* Validation */
@@ -615,7 +661,7 @@ jQuery(function($) {
                 child.parent().append('<span class="error-message">' + child.parents("form").attr("data-required") + '</span>');
                 child.parent().find('.error-message').css("margin-left", -child.parent().find('.error-message').innerWidth()/2);
                 return false;
-            } else if( child.attr("data-validation") == type && 
+            } else if( child.attr("data-validation") == type &&
                 child.val() != "" ) {
 
                 if( !check ) {
@@ -641,7 +687,7 @@ jQuery(function($) {
                 if( !checkElementValidation(child, "email", validateEmail(child.val()), parent.attr("data-email")) ||
                     !checkElementValidation(child, "phone", validateContactNumber(child.val()), parent.attr("data-phone")) ||
                     !checkElementValidation(child, "text_only", validateTextOnly(child.val()), parent.attr("data-text")) ||
-                    !checkElementValidation(child, "number", validateNumberOnly(child.val()), parent.attr("data-number")) 
+                    !checkElementValidation(child, "number", validateNumberOnly(child.val()), parent.attr("data-number"))
                 ) {
                     valid = false;
                 }
@@ -651,7 +697,7 @@ jQuery(function($) {
         }
 	/* Mailing */
 
-	$('form[data-form="contact"]').on("submit", function(e) { 
+	$('form[data-form="contact"]').on("submit", function(e) {
 	  $(".contact-success").remove();
 	  var el = $(this);
 	  var formData = el.serializeObject();
